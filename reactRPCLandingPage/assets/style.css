@@ -1,0 +1,45 @@
+
+nav {
+  font-size: 1.3em;
+}
+.docs {
+    flex-direction: column !important;
+    display: relative;
+    flex-grow:0;  
+}
+
+.docsWidth {
+    width:20%;
+}
+
+.headerN {
+    font-size: 1.8em;
+    font-weight: bolder;
+}
+
+.titles {
+    font-size: 1.5em;
+    font-weight:bold;
+}
+
+img {
+    max-width: 100% !important;
+    height: auto;
+    width: auto;
+}
+
+.docRow {
+    margin-right: 0;
+}
+
+.listGroup {
+    margin-top: 27%;
+    left:0;
+    /* position: -webkit-sticky; Safari */
+    position: sticky !important;
+    font-size: 1.3em;
+    
+}
+
+
+
