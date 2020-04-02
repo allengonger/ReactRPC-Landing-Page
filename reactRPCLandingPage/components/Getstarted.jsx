@@ -13,71 +13,71 @@ import { BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-do
 //import { LinkContainer } from 'react-router-bootstrap';
 //import { BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
-//import Container from 'react-bootstrap/Container';
-   
-{/* <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className="docsWidth">      
-<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-<Navbar.Collapse id="responsive-navbar-nav">
-<Nav className="mr-auto docs">
-<Nav.Link href="#features">Features</Nav.Link>
-<Nav.Link href="#pricing">Pricing</Nav.Link>
+//import Containe r from 'react-bootstrap/Container';
 
-<NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-<NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-<NavDropdown.Divider />
-<NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-</NavDropdown>
-</Nav>
-</Navbar.Collapse>
-</Navbar> */}
+
 
 class Getstarted extends Component {
     render() {
+      function switchClasses(){
+        const docSection = document.getElementsByClassName('list-group-item');
+       const anchorTags = document.getElementsByClassName('listlinks');  
+       console.log(anchorTags);    
+        for(let i = 0; i < anchorTags.length; i++) {
+         console.log(anchorTags[i]);
+         anchorTags[i].addEventListener("click", function() {
+           let currentTag = document.getElementsByClassName("activated");
+           
+           currentTag[0].className = currentTag[0].className.replace(" activated", "");
+           this.className += " activated";
+           console.log('hello');
+         });
+        }  
+      };
     return (
        <div>
-        <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
+         {switchClasses()}
+        <Tab.Container  defaultActiveKey="#link1">
     <Row className="docRow">
      <Col md={4}>
       <ListGroup className="listGroup">
-      <Link action to="gettingStarted#start">
-        <ListGroup.Item>
+      <Link to="gettingStarted#start" className="listlinks">
+        <ListGroup.Item className=" activated">
           Getting Started
         </ListGroup.Item>
         </Link>
-        <Link to="gettingStarted#define">
-        <ListGroup.Item >
+        <Link to="gettingStarted#define" className="listlinks" >
+        <ListGroup.Item className="" >
           Defining The Services
         </ListGroup.Item>
         </Link>
-        <Link action to="gettingStarted#protobuf">
-        <ListGroup.Item>
+        <Link to="gettingStarted#protobuf" className="listlinks"> 
+        <ListGroup.Item >
           Generating Protobuf Messages and Client
           Service Stub
         </ListGroup.Item>
         </Link>   
-        <Link to="gettingStarted#proxy">
+        <Link to="gettingStarted#proxy" className="listlinks" >
         <ListGroup.Item >
           Creating Proxy Server
         </ListGroup.Item>
         </Link>
-        <Link to="gettingStarted#googlegrpc">
+        <Link to="gettingStarted#googlegrpc" className="listlinks">
         <ListGroup.Item >
            Googles gRPC Implementation
         </ListGroup.Item>
         </Link>
-        <Link to="gettingStarted#improbablegrpc">
-        <ListGroup.Item >
+        <Link to="gettingStarted#improbablegrpc" className="listlinks">
+        <ListGroup.Item  >
            Improbable's gRPC Implementation (Including Bi-Directional Streaming)
         </ListGroup.Item>
         </Link>
-        <Link to="gettingStarted#defineM">
+        <Link to="gettingStarted#defineM" className="listlinks">
         <ListGroup.Item >
           Define Message
         </ListGroup.Item>
         </Link>
-        <Link to="gettingStarted#function">
+        <Link  to="gettingStarted#function" className="listlinks"> 
         <ListGroup.Item >
           Creating the function
         </ListGroup.Item>
@@ -99,6 +99,8 @@ class Getstarted extends Component {
                 <div className="container">
                 <img src="images/image1.png"/>
                 </div>
+                <br/>
+                <br/>
                 <p className="titles" id="define">1. Define the Services</p>
                 <p>Create proto files as the schema for your Server and Client Stubs. 
                   It should define the gRPC call methods needed to communicate between 
@@ -107,6 +109,8 @@ class Getstarted extends Component {
                   <br/>
                   <p>helloworld.proto</p> 
                   <img src="images/image2.png"/>  
+                  <br/>
+                 <br/>
                   <p className="titles" id="protobuf">2. Generate a Protobuf Messages and Client Service Stub</p>
                   <p>In order to pass superpowers to our Browser, we first need to package our .proto file.</p>
                   <p id="hithere" className="titles" id="googlegrpc">For Google's implementation:</p>
@@ -192,14 +196,12 @@ class Getstarted extends Component {
 
           </div>
         </Tab.Pane>
-        <Tab.Pane eventKey="#link2">
-           
-        </Tab.Pane>
+      
       </Tab.Content>
     </Col>
   </Row>
 </Tab.Container>
-      
+
        </div>
     )
 }

@@ -6,6 +6,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom';
 import Getstarted from './Getstarted.jsx';
 import Examples from './Examples.jsx';
+import Home from './Home.jsx';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -26,14 +27,11 @@ class Header extends Component {
           <LinkContainer to="/gettingStarted">
             <Nav.Link>Getting Started</Nav.Link>
           </LinkContainer>
-           <LinkContainer to="examples">
-            <Nav.Link>Examples</Nav.Link>
-            </LinkContainer>
          </Nav>
          <Nav>
-          <Nav.Link href="#deets">Github</Nav.Link>
+          <Nav.Link href="https://github.com/oslabs-beta/ReactRPC">Github</Nav.Link>
           <Nav.Link eventKey={2} href="#memes">
-          NPM Package
+          reactrpc v1.0.5
           </Nav.Link>
          </Nav>
         </Navbar.Collapse>
@@ -44,20 +42,15 @@ class Header extends Component {
             </Route>
             <Route exact path="/examples">
               <Examples />
+            </Route> 
+            <Route exact path="/">
+              <Home />
             </Route>           
-          </Switch> 
-          
-          <Row>
-           <Col md={6}>
-            
-              
+          </Switch>         
       </Router>
-         </Col>
-           <Col md={6}>
-             <img src="images/icon.png" />
-           </Col>
 
-         </Row>   
+       
+ 
          
         )
     }

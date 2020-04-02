@@ -1,7 +1,122 @@
+@media screen and (max-width: 600px) {
+    #buttonContainer, .col-sm-3 {
+    display: none;  
+    }
+
+   
+    #mobileHome {               /*Device Not applicable header */
+       text-align: center;
+    }
+
+  }
+
+  @media screen and (max-width: 950px) and (min-width: 601px) {
+    #buttonContainer h1 {
+          text-align: center !important;
+    }
+
+    #buttonContainer, .col-sm-3, .col-md-6 {
+        flex: 0 0 100% !important; 
+        max-width: 100% !important;
+     
+  }
+
+    #buttonContainerChild, .col-sm-3 {
+        display: block !important;  
+        max-width: 100% !important;
+        
+    }
+
+
+    #buttonContainerChild, .col-sm-3, .frontPageButtons {
+        width: 100%;
+    }
+
+    #mobileHome {
+        display: none;
+    } 
+
+    
+    
+  }
+
+
+@media screen and (min-width: 951px){
+    #buttonContainer, .col-sm-3 {
+        flex: 0 0 50% !important; 
+        max-width: 50% !important;
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+  }
+  #mobileHome {
+    display: none;
+} 
+
+
+  
+}
+
+
+
+
 
 nav {
-  font-size: 1.3em;
+  font-size: 1.7em;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.spacer {
+    position: relative;
+    height: 5%;
+    width: 100%;
+}
+
+.frontPageButtons {
+    font-size: 2.4em !important;
+   
+}
+#rightB {
+    /* margin-left: -33%; */
+    padding-left: 20% !important;
+    padding-right: 20% !important;
+}
+
+#leftB {
+    /* margin-right: -20%; */
+    padding-left: 20%  !important;
+    padding-right: 20% !important;
+}
+#buttonContainer {
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#buttonContainer h1 {
+    font-size: 5em;
+    font-weight: bolder;
+    text-align: left;
+}
+
+#buttonContainer p {
+    font-size: 1.6em;
+    text-align: left;
+}
+
+
+
+#buttonContainerChild {
+    text-align: center;
+ 
+}
+
+/* DOCUMENTATION PAGE */
 .docs {
     flex-direction: column !important;
     display: relative;
@@ -41,5 +156,31 @@ img {
     
 }
 
+#hello > p {
+    font-size: 1.6em;
+}
 
+
+/* END OF DOCUMENTATION PAGE */
+
+
+/* this is background (hidden by overlayer*/
+/* .listlinks {
+    background-color: red;
+   
+} */
+
+.activated {
+    background-color: pink !important;
+}
+.activated:hover {
+    background-color: red !important;
+}
+
+
+
+
+
+
+/* Mobile Media Query */
 
