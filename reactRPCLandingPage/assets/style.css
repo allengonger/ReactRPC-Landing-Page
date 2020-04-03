@@ -123,6 +123,10 @@ nav {
     flex-grow:0;  
 }
 
+#lst {
+    position: fixed;
+}
+
 .docsWidth {
     width:20%;
 }

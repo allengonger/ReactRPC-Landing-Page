@@ -39,7 +39,7 @@ class Getstarted extends Component {
          {switchClasses()}
         <Tab.Container  defaultActiveKey="#link1">
     <Row className="docRow">
-     <Col md={4}>
+     <Col md={4} id="lst">
       <ListGroup className="listGroup">
       <Link to="gettingStarted#start" className="listlinks">
         <ListGroup.Item className=" activated">
