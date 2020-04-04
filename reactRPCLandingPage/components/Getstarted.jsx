@@ -159,7 +159,7 @@ class Getstarted extends Component {
                     <p>For the latest stable version of the ts-protoc-gen plugin:</p>
                     <p>Download or install protoc (the protocol buffer compiler) for your platform 
                       from the github releases page or via a package manager (ie: brew, apt).</p>
-                      <p>Download protoc from here(link-here)</p>
+                      <p>Download protoc from <a href="https://github.com/protocolbuffers/protobuf/releases">here</a></p>
                       <p>When you have both protoc and ts-protoc-gen installed, 
                         you can now run this command:</p>
                         <img src="images/image6.png" />
@@ -182,11 +182,11 @@ class Getstarted extends Component {
                             to set those up can be found here (Envoy proxy) and here (Improbable's proxy)*</p>
                             <p>*Note: To enable bidirectional/client-side streaming 
                               you must use Improbable's spec and its proxy with websockets enabled</p>
-                            <p className="title">4. Set up React component</p>
+                            <p className="titles">4. Set up React component</p>
                             <p>Require in the reactRPC library and protobuf files in your 
                               React JSX file. Run the build method with the following params: 
                               the message, the services and the URL to the proxy server endpoint.</p>
-                            <p className="title">Google's Implementation</p>
+                            <p className="titles">Google's Implementation</p>
                             <img src="images/image7.png" />
                             <p>Export the reactRPC component by passing it as an argument
                                into the reactRPC wrapper as follows:</p>
