@@ -17,9 +17,9 @@ class Header extends Component {
     render(){
         return(
           <Router>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar id="navbar" collapseOnSelect expand="lg"  variant="dark">
          <LinkContainer to="/">
-          <Navbar.Brand >ReactRPC</Navbar.Brand>
+          <Navbar.Brand ><img src="images/icon.png" /></Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

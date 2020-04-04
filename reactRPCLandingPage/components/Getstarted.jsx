@@ -47,47 +47,54 @@ class Getstarted extends Component {
         </ListGroup.Item>
         </Link>
         <Link to="gettingStarted#define" className="listlinks" >
-        <ListGroup.Item className="" >
+        <ListGroup.Item className="activated" >
           Defining The Services
         </ListGroup.Item>
         </Link>
         <Link to="gettingStarted#protobuf" className="listlinks"> 
-        <ListGroup.Item >
+        <ListGroup.Item className="activated" >
           Generating Protobuf Messages and Client
           Service Stub
-        </ListGroup.Item>
+        </ListGroup.Item >
         </Link>   
         <Link to="gettingStarted#proxy" className="listlinks" >
-        <ListGroup.Item >
+        <ListGroup.Item className="activated" >
           Creating Proxy Server
         </ListGroup.Item>
         </Link>
         <Link to="gettingStarted#googlegrpc" className="listlinks">
-        <ListGroup.Item >
+        <ListGroup.Item className="activated">
            Googles gRPC Implementation
         </ListGroup.Item>
         </Link>
         <Link to="gettingStarted#improbablegrpc" className="listlinks">
-        <ListGroup.Item  >
+        <ListGroup.Item className="activated" >
            Improbable's gRPC Implementation (Including Bi-Directional Streaming)
         </ListGroup.Item>
         </Link>
         <Link to="gettingStarted#defineM" className="listlinks">
-        <ListGroup.Item >
+        <ListGroup.Item  className="activated">
           Define Message
         </ListGroup.Item>
         </Link>
         <Link  to="gettingStarted#function" className="listlinks"> 
-        <ListGroup.Item >
+        <ListGroup.Item className="activated">
           Creating the function
         </ListGroup.Item>
         </Link>
       </ListGroup>
+       <br/>
+       <br/>
+       <br/>
+
     </Col>
     <Col md={8}>
       <Tab.Content>
         <Tab.Pane eventKey="#link1">         
           <div id="hello">
+            <br/>
+            <br/>
+          
             <p className="headerN">ReactRPC</p>
              <hr/>
              <p >Full featured integration library for React and gRPC-Web. Core functions include: packaging the generated proto messages and client stubs, 
@@ -113,7 +120,12 @@ class Getstarted extends Component {
                  <br/>
                   <p className="titles" id="protobuf">2. Generate a Protobuf Messages and Client Service Stub</p>
                   <p>In order to pass superpowers to our Browser, we first need to package our .proto file.</p>
-                  <p id="hithere" className="titles" id="googlegrpc">For Google's implementation:</p>
+                  <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    
+                  <p className="headerN" id="googlegrpc">For Google's implementation:</p>
                   <p>To generate the protobuf messages and client service stub class 
                     from your .proto definitions, we need the protoc binary and the 
                     protoc-gen-grpc-web plugin.</p>
@@ -136,7 +148,11 @@ class Getstarted extends Component {
                       services : helloworld_grpc_web_pb.js 
                       </li>
                     </ul>
-                    <p className="title" id="improbablegrpc">
+                    <br/>
+                    <br/>
+                    <br/>
+                  
+                    <p className="headerN" id="improbablegrpc">
                     For Improbable's implementation:
                     </p>
                     <img src="images/image5.png" />
@@ -157,7 +173,7 @@ class Getstarted extends Component {
                            </li>
                             <li>
                              services : book_service_pb_service.js
-                           </li>
+                           </li>headerN
                           </ul>
                           <p className="titles" id="proxy">3. Create proxy server</p>
                           <p>In order for gRPC-web to communicate with other gRPC servers, 
@@ -175,7 +191,8 @@ class Getstarted extends Component {
                             <p>Export the reactRPC component by passing it as an argument
                                into the reactRPC wrapper as follows:</p>
                                <img src="images/image8.png" />
-                               <p className="titles">Improbable's Implementation</p>
+                           
+                                 <p className="titles">Improbable's Implementation</p>
                                <img src="images/image9.png" />
                                <p>Export the reactRPC component by passing it as an argument into the improbRPC wrapper as follows:</p>
                                <img src="images/image10.png" />

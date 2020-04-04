@@ -3,7 +3,7 @@
     display: none;  
     }
 
-   
+    
     #mobileHome {               /*Device Not applicable header */
        text-align: center;
     }
@@ -14,6 +14,7 @@
     #buttonContainer h1 {
           text-align: center !important;
     }
+  
 
     #buttonContainer, .col-sm-3, .col-md-6 {
         flex: 0 0 100% !important; 
@@ -36,6 +37,12 @@
         display: none;
     } 
 
+    .docRow .col-md-8 {
+        position: absolute;
+        right:0;
+    }
+    
+
     
     
   }
@@ -48,9 +55,18 @@
         margin-top: auto !important;
         margin-bottom: auto !important;
   }
+  #lst {
+    position: fixed;
+}
+
   #mobileHome {
     display: none;
 } 
+.docRow .col-md-8 {
+    position: absolute;
+    right:0;
+}
+
 
 
   
@@ -60,10 +76,11 @@
 
 
 
-nav {
+#navbar {
   font-size: 1.7em;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  background-color:rgb(46, 80, 90) !important ;
 }
 
 .row {
@@ -85,12 +102,25 @@ nav {
     /* margin-left: -33%; */
     padding-left: 20% !important;
     padding-right: 20% !important;
+    background-color:rgb(46, 80, 90);
+    color: white ;
+}
+
+#rightB:hover {
+    color: rgb(46, 80, 90) !important;
+    background-color: white !important;
 }
 
 #leftB {
     /* margin-right: -20%; */
     padding-left: 20%  !important;
     padding-right: 20% !important;
+    color: rgb(46, 80, 90);
+}
+
+#leftB:hover {
+    background-color: rgb(46, 80, 90);
+    color: white;
 }
 #buttonContainer {
     text-align: center;
@@ -123,25 +153,30 @@ nav {
     flex-grow:0;  
 }
 
-#lst {
-    position: fixed;
-}
+
 
 .docsWidth {
     width:20%;
 }
 
 .headerN {
-    font-size: 1.8em;
+    font-size: 2.5em !important;
     font-weight: bolder;
 }
 
 .titles {
-    font-size: 1.5em;
+    font-size: 1.9em !important;
     font-weight:bold;
+    margin-top: 55px;
+}
+.navbar-brand {
+    max-width: 3em;
+}
+.navbar-brand > img {
+max-width: 100%;
 }
 
-img {
+.row img {
     max-width: 100% !important;
     height: auto;
     width: auto;
@@ -165,6 +200,7 @@ img {
 }
 
 
+
 /* END OF DOCUMENTATION PAGE */
 
 
@@ -175,10 +211,13 @@ img {
 } */
 
 .activated {
-    background-color: pink !important;
+    background-color:rgb(78, 130, 144) !important;
+    color: white;
 }
 .activated:hover {
-    background-color: red !important;
+    background-color: rgb(46, 80, 90) !important;
+    text-decoration: none;
+    color: white;
 }
 
 
