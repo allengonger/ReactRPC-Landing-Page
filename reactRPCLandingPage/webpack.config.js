@@ -33,7 +33,8 @@ module.exports = {
         publicPath: '/dist/',
         proxy: {
             '/' : 'http://localhost:3000'
-        }
+        },
+        historyAPIFallback : true,
     },
     mode: process.env.NODE_ENV
 };
