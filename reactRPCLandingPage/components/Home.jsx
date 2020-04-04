@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import { HashLink as Link } from 'react-router-hash-link';
+
 
 
 class Home extends Component {
