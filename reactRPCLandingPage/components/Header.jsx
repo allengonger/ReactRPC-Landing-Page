@@ -30,7 +30,7 @@ class Header extends Component {
          </Nav>
          <Nav>
           <Nav.Link href="https://github.com/oslabs-beta/ReactRPC">Github</Nav.Link>
-          <Nav.Link eventKey={2} href="#memes">
+          <Nav.Link eventKey={2} href="https://www.npmjs.com/package/reactrpc">
           reactrpc v1.0.5
           </Nav.Link>
          </Nav>
