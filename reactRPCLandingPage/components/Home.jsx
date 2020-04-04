@@ -23,10 +23,10 @@ class Home extends Component {
              <br/>
          <Row id="buttonContainerChild" >
            <Col sm={3}>
-             <Button id="leftB" className="frontPageButtons" variant="outline-dark">Github</Button>
+             <Button id="leftB" className="frontPageButtons" variant="outline-dark" onclick="window.location.href = 'https://github.com/oslabs-beta/ReactRPC';">Github</Button>
            </Col>
            <Col sm={3}>
-             <Button id="rightB" className="frontPageButtons" variant="dark">Download</Button>
+             <Button id="rightB" className="frontPageButtons" variant="dark" onclick="window.location.href = 'https://www.npmjs.com/package/reactrpc';">Download</Button>
           </Col>
          </Row>
         
