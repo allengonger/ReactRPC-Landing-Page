@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 class Home extends Component {
@@ -22,11 +23,11 @@ class Home extends Component {
              </p>
              <br/>
          <Row id="buttonContainerChild" >
-           <Col sm={3}>
-             <Button id="leftB" className="frontPageButtons" variant="outline-dark" onclick="window.location.href = 'https://github.com/oslabs-beta/ReactRPC';">Github</Button>
+           <Col sm={3}>   
+             <button id="leftB" className="frontPageButtons" variant="outline-dark" onClick={ (e)=> {window.location.href = 'https://github.com/oslabs-beta/ReactRPC'}} >Github</button>       
            </Col>
            <Col sm={3}>
-             <Button id="rightB" className="frontPageButtons" variant="dark" onclick="window.location.href = 'https://www.npmjs.com/package/reactrpc';">Download</Button>
+             <button id="rightB" className="frontPageButtons" variant="dark" onClick={ (e)=> {window.location.href = 'https://www.npmjs.com/package/reactrpc'}}>Download</button>
           </Col>
          </Row>
         
